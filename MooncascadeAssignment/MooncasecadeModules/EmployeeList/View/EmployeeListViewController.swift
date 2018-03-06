@@ -139,11 +139,20 @@ extension EmployeeListViewController : UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let employees = employeeCategories[indexPath.section]
-        let employee = employees[indexPath.row]
+        let employee:Employee?
+        
+        if isFilterTableLoading {
+            employee = filteredEmployess[indexPath.row]
+        }else{
+            employee = employees[indexPath.row]
+
+        }
 
         let employeeDetailViewController:EmployeeDetailViewController = EmployeeDetailViewController() as EmployeeDetailViewController
         employeeDetailViewController.employee = employee
-        self.navigationController?.pushViewController(employeeDetailViewController, animated: true)
+            self.navigationController?.pushViewController(employeeDetailViewController, animated: true)
+            
+        
     }
 }
 extension EmployeeListViewController : UISearchResultsUpdating,UISearchBarDelegate{
