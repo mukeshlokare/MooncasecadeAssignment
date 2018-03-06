@@ -55,10 +55,11 @@ class EmployeeListViewController: BaseViewController {
     
     func setupTableView(){
         
-        self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 20)
+        self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - Constant.BOTTOM_SPACE_NAV_HEIGHT)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.view.addSubview(tableView)
+        self.tableView.sectionFooterHeight = 0.0
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         
     }
@@ -122,9 +123,9 @@ extension EmployeeListViewController : UITableViewDataSource, UITableViewDelegat
         
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        
+
         if isFilterTableLoading {
             return nil
         }else{
@@ -134,7 +135,7 @@ extension EmployeeListViewController : UITableViewDataSource, UITableViewDelegat
             return employee.position
         }
     }
-    
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let employees = employeeCategories[indexPath.section]

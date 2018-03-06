@@ -53,9 +53,9 @@ class EmployeeDetailViewController: BaseViewController {
     func setupTableView(){
         
         if (employee?.isContactAvilable)! {
-            self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - (Constant.BOTTOM_PADDING + 50.0))
+            self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - (Constant.BOTTOM_SPACE_NAV_HEIGHT + 50.0))
         }else{
-            self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - Constant.BOTTOM_PADDING)
+            self.tableView.frame = CGRect.init(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - Constant.BOTTOM_SPACE_NAV_HEIGHT)
         }
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -66,7 +66,7 @@ class EmployeeDetailViewController: BaseViewController {
 
     func setupBottomButton(){
         
-        let bottomView = UIView.init(frame: CGRect.init(x: 0, y: self.view.frame.size.height - (Constant.BOTTOM_PADDING + 50.0), width: self.view.frame.size.width, height: 50))
+        let bottomView = UIView.init(frame: CGRect.init(x: 0, y: self.view.frame.size.height - (Constant.BOTTOM_SPACE_NAV_HEIGHT + 50.0), width: self.view.frame.size.width, height: 50))
         bottomView.backgroundColor = UIColor.customWhiteGray
         btnBottom.frame = CGRect.init(x: bottomView.frame.size.width/2 - 20, y: 0, width: 50, height: 50)
         btnBottom.setTitle("Call", for: .normal)
@@ -86,11 +86,8 @@ class EmployeeDetailViewController: BaseViewController {
     @objc func buttonAction(_ sender:UIButton!)
     {
         if let phone = employee?.contactDetails?.phone {
-            let phoneCallURL = URL(string: "tel://\(phone)")
-            let application:UIApplication = UIApplication.shared
-            if (application.canOpenURL(phoneCallURL!)) {
-                application.open(phoneCallURL!, options: [:], completionHandler: nil)
-            }
+            let trimmedPhoneStr = phone.removingWhitespaces()
+            UIApplication.shared.open(NSURL(string: "tel://"+"\(trimmedPhoneStr)")! as URL, options: [:], completionHandler: nil)
         }
     }
     
@@ -143,3 +140,10 @@ extension EmployeeDetailViewController : UITableViewDataSource, UITableViewDeleg
         
     }
 }
+
+extension String {
+    func removingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
+}
+
