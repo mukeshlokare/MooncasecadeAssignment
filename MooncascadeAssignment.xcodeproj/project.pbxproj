@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E91B33AF204BC184009A696B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33AE204BC184009A696B /* AppDelegate.swift */; };
-		E91B33B1204BC184009A696B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33B0204BC184009A696B /* ViewController.swift */; };
-		E91B33B4204BC184009A696B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B33B2204BC184009A696B /* Main.storyboard */; };
-		E91B33B6204BC184009A696B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91B33B5204BC184009A696B /* Assets.xcassets */; };
-		E91B33B9204BC184009A696B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91B33B7204BC184009A696B /* LaunchScreen.storyboard */; };
 		E91B33C4204BC184009A696B /* MooncascadeAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33C3204BC184009A696B /* MooncascadeAssignmentTests.swift */; };
 		E91B33CF204BC184009A696B /* MooncascadeAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33CE204BC184009A696B /* MooncascadeAssignmentUITests.swift */; };
+		E92CA25D204E4C6B002D33AC /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92CA25C204E4C6B002D33AC /* ContactsUI.framework */; };
+		E92CA260204E5F9F002D33AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92CA25F204E5F9F002D33AC /* BaseViewController.swift */; };
+		E93143C0204D255B005B8F12 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143BF204D255A005B8F12 /* EmployeeListViewController.swift */; };
+		E93143C7204D2689005B8F12 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143C6204D2689005B8F12 /* Constant.swift */; };
+		E93143C9204D2789005B8F12 /* MooncasecadeExtenssion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143C8204D2789005B8F12 /* MooncasecadeExtenssion.swift */; };
+		E93143CD204D384B005B8F12 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143CC204D384B005B8F12 /* ServiceManager.swift */; };
+		E93143CF204D39DE005B8F12 /* WebServicesConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143CE204D39DE005B8F12 /* WebServicesConstant.swift */; };
+		E93143D1204D4239005B8F12 /* EmployeeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143D0204D4239005B8F12 /* EmployeeListViewModel.swift */; };
+		E94078AC204D43CF0033E68C /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94078AB204D43CF0033E68C /* EmployeeModel.swift */; };
+		E94078AF204D6F490033E68C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E94078AE204D6F490033E68C /* Contacts.framework */; };
+		E94078B1204D83470033E68C /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94078B0204D83470033E68C /* EmployeeDetailViewController.swift */; };
+		E94078B3204D8BEA0033E68C /* EmployeeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94078B2204D8BEA0033E68C /* EmployeeDetailViewModel.swift */; };
+		E94078B5204D8E0D0033E68C /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94078B4204D8E0D0033E68C /* Validator.swift */; };
+		E960B7CD204D1C51007489EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E960B7C9204D1C51007489EB /* Assets.xcassets */; };
+		E960B7CE204D1C51007489EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E960B7CA204D1C51007489EB /* LaunchScreen.storyboard */; };
+		E960B7CF204D1C51007489EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E960B7CC204D1C51007489EB /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +48,28 @@
 /* Begin PBXFileReference section */
 		E91B33AB204BC184009A696B /* MooncascadeAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MooncascadeAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B33AE204BC184009A696B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E91B33B0204BC184009A696B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E91B33B3204BC184009A696B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E91B33B5204BC184009A696B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E91B33B8204BC184009A696B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E91B33BA204BC184009A696B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91B33BF204BC184009A696B /* MooncascadeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooncascadeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B33C3204BC184009A696B /* MooncascadeAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooncascadeAssignmentTests.swift; sourceTree = "<group>"; };
 		E91B33C5204BC184009A696B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91B33CA204BC184009A696B /* MooncascadeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooncascadeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B33CE204BC184009A696B /* MooncascadeAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooncascadeAssignmentUITests.swift; sourceTree = "<group>"; };
 		E91B33D0204BC184009A696B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92CA25C204E4C6B002D33AC /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		E92CA25F204E5F9F002D33AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E93143BF204D255A005B8F12 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
+		E93143C6204D2689005B8F12 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E93143C8204D2789005B8F12 /* MooncasecadeExtenssion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooncasecadeExtenssion.swift; sourceTree = "<group>"; };
+		E93143CC204D384B005B8F12 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		E93143CE204D39DE005B8F12 /* WebServicesConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServicesConstant.swift; sourceTree = "<group>"; };
+		E93143D0204D4239005B8F12 /* EmployeeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListViewModel.swift; sourceTree = "<group>"; };
+		E94078AB204D43CF0033E68C /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
+		E94078AE204D6F490033E68C /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		E94078B0204D83470033E68C /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		E94078B2204D8BEA0033E68C /* EmployeeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewModel.swift; sourceTree = "<group>"; };
+		E94078B4204D8E0D0033E68C /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		E960B7C9204D1C51007489EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E960B7CB204D1C51007489EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E960B7CC204D1C51007489EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92CA25D204E4C6B002D33AC /* ContactsUI.framework in Frameworks */,
+				E94078AF204D6F490033E68C /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 				E91B33C2204BC184009A696B /* MooncascadeAssignmentTests */,
 				E91B33CD204BC184009A696B /* MooncascadeAssignmentUITests */,
 				E91B33AC204BC184009A696B /* Products */,
+				E94078AD204D6F480033E68C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +123,10 @@
 		E91B33AD204BC184009A696B /* MooncascadeAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				E91B33AE204BC184009A696B /* AppDelegate.swift */,
-				E91B33B0204BC184009A696B /* ViewController.swift */,
-				E91B33B2204BC184009A696B /* Main.storyboard */,
-				E91B33B5204BC184009A696B /* Assets.xcassets */,
-				E91B33B7204BC184009A696B /* LaunchScreen.storyboard */,
-				E91B33BA204BC184009A696B /* Info.plist */,
+				E93143B6204D255A005B8F12 /* MooncasecadeModules */,
+				E93143C2204D25C2005B8F12 /* WebServicesWrapper */,
+				E93143B5204D252C005B8F12 /* CommanClasses */,
+				E960B7C8204D1C51007489EB /* SupportingFiles */,
 			);
 			path = MooncascadeAssignment;
 			sourceTree = "<group>";
@@ -123,6 +147,130 @@
 				E91B33D0204BC184009A696B /* Info.plist */,
 			);
 			path = MooncascadeAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		E92CA25E204E5F8E002D33AC /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E92CA25F204E5F9F002D33AC /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		E93143B5204D252C005B8F12 /* CommanClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E93143C6204D2689005B8F12 /* Constant.swift */,
+				E93143C8204D2789005B8F12 /* MooncasecadeExtenssion.swift */,
+				E94078B4204D8E0D0033E68C /* Validator.swift */,
+			);
+			path = CommanClasses;
+			sourceTree = "<group>";
+		};
+		E93143B6204D255A005B8F12 /* MooncasecadeModules */ = {
+			isa = PBXGroup;
+			children = (
+				E92CA25E204E5F8E002D33AC /* BaseViewController */,
+				E93143BB204D255A005B8F12 /* EmployeeList */,
+				E93143B7204D255A005B8F12 /* EmployeeDetail */,
+			);
+			path = MooncasecadeModules;
+			sourceTree = "<group>";
+		};
+		E93143B7204D255A005B8F12 /* EmployeeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E93143B9204D255A005B8F12 /* Model */,
+				E93143BA204D255A005B8F12 /* View */,
+				E93143B8204D255A005B8F12 /* ViewModel */,
+			);
+			path = EmployeeDetail;
+			sourceTree = "<group>";
+		};
+		E93143B8204D255A005B8F12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E94078B2204D8BEA0033E68C /* EmployeeDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E93143B9204D255A005B8F12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E93143BA204D255A005B8F12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E94078B0204D83470033E68C /* EmployeeDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E93143BB204D255A005B8F12 /* EmployeeList */ = {
+			isa = PBXGroup;
+			children = (
+				E93143BD204D255A005B8F12 /* Model */,
+				E93143BE204D255A005B8F12 /* View */,
+				E93143BC204D255A005B8F12 /* ViewModel */,
+			);
+			path = EmployeeList;
+			sourceTree = "<group>";
+		};
+		E93143BC204D255A005B8F12 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E93143D0204D4239005B8F12 /* EmployeeListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E93143BD204D255A005B8F12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E94078AB204D43CF0033E68C /* EmployeeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E93143BE204D255A005B8F12 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E93143BF204D255A005B8F12 /* EmployeeListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E93143C2204D25C2005B8F12 /* WebServicesWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				E93143CC204D384B005B8F12 /* ServiceManager.swift */,
+				E93143CE204D39DE005B8F12 /* WebServicesConstant.swift */,
+			);
+			path = WebServicesWrapper;
+			sourceTree = "<group>";
+		};
+		E94078AD204D6F480033E68C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92CA25C204E4C6B002D33AC /* ContactsUI.framework */,
+				E94078AE204D6F490033E68C /* Contacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E960B7C8204D1C51007489EB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E91B33AE204BC184009A696B /* AppDelegate.swift */,
+				E960B7C9204D1C51007489EB /* Assets.xcassets */,
+				E960B7CA204D1C51007489EB /* LaunchScreen.storyboard */,
+				E960B7CC204D1C51007489EB /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +380,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91B33B9204BC184009A696B /* LaunchScreen.storyboard in Resources */,
-				E91B33B6204BC184009A696B /* Assets.xcassets in Resources */,
-				E91B33B4204BC184009A696B /* Main.storyboard in Resources */,
+				E960B7CD204D1C51007489EB /* Assets.xcassets in Resources */,
+				E960B7CE204D1C51007489EB /* LaunchScreen.storyboard in Resources */,
+				E960B7CF204D1C51007489EB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91B33B1204BC184009A696B /* ViewController.swift in Sources */,
+				E94078AC204D43CF0033E68C /* EmployeeModel.swift in Sources */,
 				E91B33AF204BC184009A696B /* AppDelegate.swift in Sources */,
+				E93143CF204D39DE005B8F12 /* WebServicesConstant.swift in Sources */,
+				E94078B5204D8E0D0033E68C /* Validator.swift in Sources */,
+				E93143C0204D255B005B8F12 /* EmployeeListViewController.swift in Sources */,
+				E92CA260204E5F9F002D33AC /* BaseViewController.swift in Sources */,
+				E93143C7204D2689005B8F12 /* Constant.swift in Sources */,
+				E94078B3204D8BEA0033E68C /* EmployeeDetailViewModel.swift in Sources */,
+				E93143C9204D2789005B8F12 /* MooncasecadeExtenssion.swift in Sources */,
+				E93143D1204D4239005B8F12 /* EmployeeListViewModel.swift in Sources */,
+				E93143CD204D384B005B8F12 /* ServiceManager.swift in Sources */,
+				E94078B1204D83470033E68C /* EmployeeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,18 +454,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E91B33B2204BC184009A696B /* Main.storyboard */ = {
+		E960B7CA204D1C51007489EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E91B33B3204BC184009A696B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		E91B33B7204BC184009A696B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E91B33B8204BC184009A696B /* Base */,
+				E960B7CB204D1C51007489EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -427,7 +577,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MooncascadeAssignment/Info.plist;
+				DEVELOPMENT_TEAM = 9LF24P7WQU;
+				INFOPLIST_FILE = MooncascadeAssignment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mukesh.MooncascadeAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +593,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MooncascadeAssignment/Info.plist;
+				DEVELOPMENT_TEAM = 9LF24P7WQU;
+				INFOPLIST_FILE = MooncascadeAssignment/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mukesh.MooncascadeAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";

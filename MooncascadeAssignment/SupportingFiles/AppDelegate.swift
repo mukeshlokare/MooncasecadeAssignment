@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  MooncascadeAssignment
@@ -8,14 +9,24 @@
 
 import UIKit
 
+typealias anyDict = [String:Any]
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let employeeListViewContoller = EmployeeListViewController() as UIViewController
+        let navigationController = UINavigationController(rootViewController: employeeListViewContoller)
+        navigationController.navigationBar.barTintColor = UIColor.customWhiteGray
+        navigationController.navigationBar.isTranslucent = false
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
