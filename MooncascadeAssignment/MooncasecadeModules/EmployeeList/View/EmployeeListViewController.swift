@@ -34,13 +34,18 @@ class EmployeeListViewController: BaseViewController {
 
         self.title = "Employees"
         self.showActivityIndicatory(uiView: self.view)
-        viewModel.callToGetEmployeeListFromServer { (employees,allEmployees) in
-            self.employeeCategories = employees!
-            self.allEmployees = allEmployees!
+        viewModel.callToGetEmployeeListFromServer { (employees,allEmployees,message) in
             
-            DispatchQueue.main.async {
-                self.hideActivityIndicatorView()
-                self.tableView.reloadData()
+            if message == "Success"{
+                self.employeeCategories = employees!
+                self.allEmployees = allEmployees!
+                
+                DispatchQueue.main.async {
+                    self.hideActivityIndicatorView()
+                    self.tableView.reloadData()
+                }
+            }else{
+                Toast().showToast(message: "list should remain refreshable", vc:self)
             }
         }
         
@@ -138,6 +143,9 @@ extension EmployeeListViewController : UITableViewDataSource, UITableViewDelegat
    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.searchController.isActive = false
+        self.searchBarCancelButtonClicked(searchController.searchBar)
+
         let employees = employeeCategories[indexPath.section]
         let employee:Employee?
         

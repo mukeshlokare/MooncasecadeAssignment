@@ -23,19 +23,25 @@ class EmployeeListViewModel: NSObject {
     
     var employeeList = [Employee]()
 
-    func callToGetEmployeeListFromServer(completionHandler: @escaping (_ r: [[Employee]]?,[Employee]?) -> Void){
+    func callToGetEmployeeListFromServer(completionHandler: @escaping (_ r: [[Employee]]?,[Employee]?,String?) -> Void){
         
-    ServiceManager.callToWebService(apiEndUrl:APIEndUrl.employee_list, param:nil, successCompletionHandler: { (result) in
-            print(result!)
+   
+    ServiceManager.callToWebService(apiEndUrl:APIEndUrl.employee_list, param:nil,successCompletionHandler: { (result) in
+      
             if let response = result{
-              let employess = response["employees"] as! [anyDict]
+                let employess = response["employees"] as! [anyDict]
                 for employee in employess {
                     self.employeeList.append(Employee(jsonDict: employee))
                 }
-            completionHandler(self.categorisedEmployeeInTheGroup(),self.employeeList)
+            completionHandler(self.categorisedEmployeeInTheGroup(),self.employeeList,"Success")
                 
             }
-        })
+        
+        }) { (result) in
+           
+            completionHandler(nil,nil,"Error")
+
+        }
     }
     
     func categorisedEmployeeInTheGroup()-> [[Employee]]{

@@ -10,6 +10,7 @@
 		E91B33AF204BC184009A696B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33AE204BC184009A696B /* AppDelegate.swift */; };
 		E91B33C4204BC184009A696B /* MooncascadeAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33C3204BC184009A696B /* MooncascadeAssignmentTests.swift */; };
 		E91B33CF204BC184009A696B /* MooncascadeAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91B33CE204BC184009A696B /* MooncascadeAssignmentUITests.swift */; };
+		E924E3B32051601F00EBF94A /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924E3B22051601F00EBF94A /* Toast.swift */; };
 		E92CA25D204E4C6B002D33AC /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92CA25C204E4C6B002D33AC /* ContactsUI.framework */; };
 		E92CA260204E5F9F002D33AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92CA25F204E5F9F002D33AC /* BaseViewController.swift */; };
 		E93143C0204D255B005B8F12 /* EmployeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93143BF204D255A005B8F12 /* EmployeeListViewController.swift */; };
@@ -54,6 +55,7 @@
 		E91B33CA204BC184009A696B /* MooncascadeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MooncascadeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91B33CE204BC184009A696B /* MooncascadeAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MooncascadeAssignmentUITests.swift; sourceTree = "<group>"; };
 		E91B33D0204BC184009A696B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E924E3B22051601F00EBF94A /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		E92CA25C204E4C6B002D33AC /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
 		E92CA25F204E5F9F002D33AC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E93143BF204D255A005B8F12 /* EmployeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				E93143C6204D2689005B8F12 /* Constant.swift */,
 				E93143C8204D2789005B8F12 /* MooncasecadeExtenssion.swift */,
 				E94078B4204D8E0D0033E68C /* Validator.swift */,
+				E924E3B22051601F00EBF94A /* Toast.swift */,
 			);
 			path = CommanClasses;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E924E3B32051601F00EBF94A /* Toast.swift in Sources */,
 				E94078AC204D43CF0033E68C /* EmployeeModel.swift in Sources */,
 				E91B33AF204BC184009A696B /* AppDelegate.swift in Sources */,
 				E93143CF204D39DE005B8F12 /* WebServicesConstant.swift in Sources */,
